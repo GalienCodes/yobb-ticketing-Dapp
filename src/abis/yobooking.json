@@ -1,0 +1,746 @@
+{"abi":[
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"internalType": "uint256",
+				"name": "eventId",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "name",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "VipticketPrice",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "SilverticketPrice",
+				"type": "uint256"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "eventDate",
+				"type": "uint256"
+			}
+		],
+		"name": "EventCreated",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"internalType": "address",
+				"name": "buyer",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"internalType": "string",
+				"name": "category",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"internalType": "uint256",
+				"name": "ticketPrice",
+				"type": "uint256"
+			}
+		],
+		"name": "TicketBought",
+		"type": "event"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_numVipTickets",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_numSilverTickets",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_vipTicketPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_silverTicketPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_eventName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_eventDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_eventVenue",
+				"type": "string"
+			}
+		],
+		"name": "addEvent",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_eventId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_category",
+				"type": "string"
+			}
+		],
+		"name": "buyTicket",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "events",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "eventId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "numVipTickets",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "numSilverTickets",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "vipTicketPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "silverTicketPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "vipSold",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "silverSold",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sellingDuration",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "eventDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "eventVenue",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getAllEvents",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "eventId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numVipTickets",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numSilverTickets",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "vipTicketPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "silverTicketPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "vipSold",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "silverSold",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "sellingDuration",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "eventName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "eventVenue",
+						"type": "string"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "ticketId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isSold",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "eventId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "category",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "eventName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "eventDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "eventVenue",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Ticketing.Ticket[]",
+						"name": "vipTickets",
+						"type": "tuple[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "ticketId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "bool",
+								"name": "isSold",
+								"type": "bool"
+							},
+							{
+								"internalType": "uint256",
+								"name": "eventId",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "category",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "eventName",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "eventDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "eventVenue",
+								"type": "string"
+							}
+						],
+						"internalType": "struct Ticketing.Ticket[]",
+						"name": "silverTickets",
+						"type": "tuple[]"
+					}
+				],
+				"internalType": "struct Ticketing.Event[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_eventId",
+				"type": "uint256"
+			}
+		],
+		"name": "getEvent",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "eventOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "eventId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "numVipTickets",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "numSilverTickets",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "vipSold",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "silverSold",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sellingDuration",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_eventVenue",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "eventDate",
+				"type": "uint256"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "ticketId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isSold",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "eventName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "eventVenue",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Ticketing.Ticket[]",
+				"name": "vipTickets",
+				"type": "tuple[]"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "ticketId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isSold",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "eventName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "eventVenue",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Ticketing.Ticket[]",
+				"name": "silverTickets",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "myEventCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "myEvents",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "eventId",
+				"type": "uint256"
+			},
+			{
+				"internalType": "address",
+				"name": "owner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "numVipTickets",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "numSilverTickets",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "vipTicketPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "silverTicketPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "vipSold",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "silverSold",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "sellingDuration",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "eventName",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "eventDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "eventVenue",
+				"type": "string"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "myOrders",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "timestamp",
+				"type": "uint256"
+			},
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "ticketId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "isSold",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "category",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "eventName",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eventDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "eventVenue",
+						"type": "string"
+					}
+				],
+				"internalType": "struct Ticketing.Ticket",
+				"name": "ticket",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "numEvents",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "orderCount",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "tickets_counter",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]}
