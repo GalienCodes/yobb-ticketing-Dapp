@@ -13,7 +13,7 @@ const LandingPage = () => {
       <div className='pb-10 sm:pb-10 text-white'>
         {connectedAccount ? (
           <h2 className='font-semibold mx-4 pt-4 sm:mx-6 lg:mx-0 text-2xl text-center sm:text-left'>
-            Latest events.
+            Latest events
           </h2>
         ) : (
           <p className='w-10/12 sm:w-4/12 mx-auto a font-bold text-center p-5 bg-[#2db369] shadow-md rounded'>
