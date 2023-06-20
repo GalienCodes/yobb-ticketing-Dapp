@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import { displayData, truncate, useGlobalState } from 'store';
