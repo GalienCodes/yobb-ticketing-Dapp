@@ -27,13 +27,13 @@ console.log(ticket_id);
     <div className='py-24 sm:py-28 max-w-4xl mx-auto '>
       <div className='flex gap-4 flex-col justify-center  mx-4 sm:flex-row'>
         <div className='flex flex-col bg-gray-50 rounded-md  pt-4'>
-          {/* <Image
+          <Image
             src={qr_code}
             className='rounded-md  w-full'
             width={100}
             height={100}
             alt='QR code of a ticket'
-          /> */}
+          />
         </div>
         <div className='flex gap-4 flex-col justify-center mx-4 sm:flex-row items-center text-gray-50'>
           <div className='flex flex-col'>
