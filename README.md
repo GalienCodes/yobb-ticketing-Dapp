@@ -67,8 +67,7 @@ NFT view on the CELO explorer:
 ![celo explorer](https://i.ibb.co/mXkzbDk/Screenshot-from-2023-06-22-16-46-12.png)
 
 Client can watch ticket QR code by clicking on the "Watch QR code" button.
-![Ticket QR_code](https://i.ibb.co/2tCWXGK/Screenshot-from-2023-06-19-23-41-19.png)
-
+![Ticket QR_code](https://i.ibb.co/zFBX5H3/Screenshot-from-2023-06-22-18-34-05.png)
 After scanning qr code, ticket info page will open.
 ###NOTE: Only owner  that scans a qr code of a ticket and opens ticket information page.
 ![Ticket info](https://i.ibb.co/G0V4gnq/Screenshot-from-2023-06-22-15-14-26.png)
