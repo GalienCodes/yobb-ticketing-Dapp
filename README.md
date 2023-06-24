@@ -11,8 +11,9 @@ In addition, Yob integrates with Celo Explore, allowing users to view the minted
 
 The purpose of this Yob is to provide a platform for the sale and purchase of event tickets, Users can purchase tickets for events through the smart contract and their purchases will be recorded and tracked.
 
-### Click on the link below for live demo
-[Live Youtube demo](https://youtu.be/_IWWrk6qNbc)
+### Click on the link below for a live demo
+- [https://yobb.netlify.app/](https://yobb.netlify.app/)
+- [Live Youtube demo](https://youtu.be/_IWWrk6qNbc)
 
 ## Tech Stack
 This Dapp uses the following tech stack:
