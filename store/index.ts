@@ -46,6 +46,7 @@ const {setGlobalState, useGlobalState, getGlobalState }=createGlobalState({
     const dateString =  date.toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric'})
     return dateString;
   }
+
   const setAlert = (msg: any, color = 'green') => {
     setGlobalState('loading', {msg:"",show: false})
     setGlobalState('alert', { show: true, msg, color })
@@ -59,7 +60,6 @@ const {setGlobalState, useGlobalState, getGlobalState }=createGlobalState({
     setGlobalState('loading', {show: true, msg })
   }
 
-
 const truncate = (text: string | any, startChars:number, endChars:number, maxLength:number) => {
   if (text?.length > maxLength) {
     var start = text.substring(0, startChars)
@@ -71,6 +71,7 @@ const truncate = (text: string | any, startChars:number, endChars:number, maxLen
   }
   return text
 }
+
 export {
   useGlobalState,
   setGlobalState,
