@@ -22,8 +22,8 @@ import { use } from 'react';
 
 
 
-export const TicketNFTAddress = '0xAf87386916A31AEa3D223717cdF1a6D05e15d12F';
-const TicketingAddress = '0x9c6C5814204AaFA5E34063a5e7e975B790B73563';
+export const TicketNFTAddress = '0x261a13de3712c7da7085021Cd536A4373F2AB574';
+const TicketingAddress = '0x021319c3de0cEF600B6163B2c349749813Aa4E03';
 
 const getEtheriumContract = async (
   contractAddress: string,
