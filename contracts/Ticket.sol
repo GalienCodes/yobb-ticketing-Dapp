@@ -138,8 +138,6 @@ contract Ticketing {
 
         require(block.timestamp <= eventToBuy.sellingDuration, "Ticket Selling Duration has passed");
 
-        
-
         if (keccak256(bytes(_category)) == keccak256(bytes("VIP"))) {
             require(eventToBuy.vipSold < eventToBuy.numVipTickets, "All VIP tickets are sold out");
             ticketsToBuy = eventToBuy.vipTickets;
