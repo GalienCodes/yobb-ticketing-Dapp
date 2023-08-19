@@ -253,7 +253,7 @@ export const getMyEvents = async () => {
       // assign the myEventCount to the variable counter
       setGlobalState('loaddata', {
         show: true,
-        msg: 'loading events',
+        msg: 'loading data',
         color: '',
       });
       const counter = await yobookingContract?.myEventCount(address);
@@ -312,7 +312,7 @@ export const getMyTickets = async () => {
       // assign the orderCount to the variable counter
       setGlobalState('loaddata', {
         show: true,
-        msg: 'loading tickets',
+        msg: 'loading data',
         color: '',
       });
       const counter = await yobookingContract?.orderCount(address);
