@@ -20,10 +20,8 @@ import FormData from 'form-data';
 import toast from 'react-hot-toast';
 import { use } from 'react';
 
-
-
-export const TicketNFTAddress = '0x261a13de3712c7da7085021Cd536A4373F2AB574';
-const TicketingAddress = '0x021319c3de0cEF600B6163B2c349749813Aa4E03';
+export const TicketNFTAddress = '0x9a6e5daeAcfdf268dA02300D65849525DFf17cdA';
+export TicketingAddress = '0xcd3CfC5EA72265149dBd22f180a0d76d551E1687';
 
 const getEtheriumContract = async (
   contractAddress: string,
