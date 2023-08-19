@@ -25,7 +25,7 @@ This Dapp uses the following tech stack:
 - `QRcode` - QRcode generator.
  
 ## Prerequisite
-1. Install the Coinbase wallet/ celo wallet
+1. Install the **Coinbase wallet**
 2. Create a wallet.
 3. Get some [Celo Faucet](https://faucet.celo.org/alfajores) and get tokens for the alfajores testnet.
 
