@@ -20,7 +20,7 @@ const Events = () => {
   return (
     <>
       <div className='mx-4 sm:mx-0 grid grid-cols-1  gap-2 sm:grid-cols-2 sm:gap-4'>
-        {allEvents?.map(
+        {(allEvents?.slice(0, 9))?.map(
           (
             item: {
               eventId: number;
