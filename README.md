@@ -20,7 +20,7 @@ This Dapp uses the following tech stack:
 - `Nextjs` :  React framework that gives you building blocks to create web application
 - `Web3Modal`:  is an elegantly simple yet powerful library that helps you manage your multi-chain wallet connection flows, all in one place.
 - `Hardhat` - A tool for writing and deploying smart contracts.
-- `Tailwind CSS`: is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.
+- `Tailwind CSS`: is a utility-first CSS framework for rapidly building modern websites without ever 
 - `Axios` - A promise-based HTTP client for node.js. Used to send requests to pinata api.
 - `QRcode` - QRcode generator.
  
