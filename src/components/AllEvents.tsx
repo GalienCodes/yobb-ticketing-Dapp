@@ -16,11 +16,11 @@ export interface Ticket {
 }
 
 const Events = () => {
-  const [allEvents] = useGlobalState('allEvents'); 
+  const [allEvents] = useGlobalState('allEvents');
   return (
     <>
       <div className='mx-4 sm:mx-0 grid grid-cols-1  gap-2 sm:grid-cols-2 sm:gap-4'>
-        {(allEvents?.slice(0, 9))?.map(
+        {(allEvents?.slice(0, 6))?.map(
           (
             item: {
               eventId: number;
@@ -32,8 +32,8 @@ const Events = () => {
               sellingDuration?: string;
               silverTicketPrice?: string;
               vipTicketPrice?: string;
-              vipTickets:Ticket[];
-              silverTickets:Ticket[];
+              vipTickets: Ticket[];
+              silverTickets: Ticket[];
               eventVenue: string;
             },
             i: number
@@ -66,8 +66,8 @@ const Events = () => {
                   vipTickets={vipTickets}
                   silverTickets={silverTickets}
                   sellingDuration={sellingDuration}
-                  eventVenue={eventVenue} 
-                  eventId={0}                />
+                  eventVenue={eventVenue}
+                  eventId={0} />
               </Link>
             );
           }

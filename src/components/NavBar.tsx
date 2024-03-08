@@ -1,19 +1,13 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { toast } from 'react-hot-toast';
 import { HiMenuAlt3 } from 'react-icons/hi';
-import { MdClose, MdOutlineLogout } from 'react-icons/md';
+import { MdClose } from 'react-icons/md';
 import { Web3Provider } from '@ethersproject/providers';
 import { setGlobalState, truncate } from 'store';
-
-import WalletConnectProvider from '@walletconnect/web3-provider';
-import Head from 'next/head';
 import { useCallback, useEffect, useReducer } from 'react';
 import WalletLink from 'walletlink';
 import Web3Modal from 'web3modal';
-import { ellipseAddress, getChainData } from '../lib/utilities';
-import { ethers } from 'ethers';
 
 const INFURA_ID = '460f40a260564ac4a4f4b3fffb032dad';
 
@@ -21,11 +15,11 @@ const providerOptions = {
   'custom-walletlink': {
     display: {
       logo: 'https://play-lh.googleusercontent.com/PjoJoG27miSglVBXoXrxBSLveV6e3EeBPpNY55aiUUBM9Q1RCETKCOqdOkX2ZydqVf0',
-      name: 'Coinbase',
+      name: 'Metamask',
       description: 'Connect to Coinbase Wallet (not Coinbase App)',
     },
     options: {
-      appName: 'Coinbase', // Your app name
+      appName: 'Yob', // Your app name
       networkUrl: `https://alfajores-forno.celo-testnet.org`,
       chainId: 44787,
     },
@@ -38,7 +32,7 @@ const providerOptions = {
       const walletLink = new WalletLink({
         appName,
       });
-      const provider = walletLink.makeWeb3Provider(networkUrl, chainId);
+      const provider = walletLink.makeWeb3Provider(networkUrl, 44787);
       await provider.enable();
       return provider;
     },
