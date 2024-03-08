@@ -2,7 +2,7 @@
 pragma solidity ^0.8.0;
 
 /// @title Ticketing contract for selling VIP and Silver tickets for events
-/// @author [author name]
+/// @author Muhindo-Galien
 /// @notice This contract allows event organizers to create events and sell tickets to users
 /// @dev This contract is written in Solidity version 0.8.0
 contract Ticketing {
