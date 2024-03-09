@@ -17,7 +17,7 @@ const LandingPage = () => {
           </h2>
         ) : (
           <p className='w-10/12 sm:w-4/12 mx-auto a font-bold text-center p-5 bg-[#2db369] shadow-md rounded'>
-            Please, Connecte Your Coinbase wallet!
+            Please, Connect Your Metamask wallet!
           </p>
         )}
       </div>
